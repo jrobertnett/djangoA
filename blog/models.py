@@ -14,5 +14,5 @@ class Publicar(models.Model):
             self.fecha_publica = timezone.now()
             self.save()
 
-        def __str__(self):
-            return self.title
+        #def __str__(self):
+        #return self.titulo()
