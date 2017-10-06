@@ -35,4 +35,4 @@ def editar_publicacion(request, pk):
                 return redirect('postear', pk=p.pk)
         else:
             f = PostearForm(instance=p)
-        return render(request, 'blog/nueva_publicacion.html', {'f': f})
+        return render(request, 'blog/editar_publicacion.html', {'f': f})
